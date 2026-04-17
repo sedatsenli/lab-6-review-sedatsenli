@@ -39,7 +39,7 @@ public:
     // TODO 1a: Default constructor
     // Set name to "Unknown", id to 0, gpa to 0.0
     Student() {
-        name = "unknown"; 
+        name = "Unknown"; 
         id = 0;
         gpa = 0.0;
         
@@ -124,12 +124,12 @@ public:
     // Hint: loop through each character and use toupper()
     string getFormattedName() const {
         // YOUR CODE HERE
-        string upper = name;
-    for (size_t i = 0; i < upper.length(); i++) { //for loopu
-    upper[i] = toupper(upper[i]); //exampledan kopyaladim
+        string UPPERCASE = name;
+    for (size_t i = 0; i < UPPERCASE.length(); i++) { 
+    UPPERCASE[i] = toupper(UPPERCASE[i]); 
     }
         //return "";
-        return upper;
+        return UPPERCASE;
     }
 
     // ----- Task 5: Operator Overloading -----
